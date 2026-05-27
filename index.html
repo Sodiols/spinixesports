@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spinix Esports | Official Team Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Orbitron', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          colors: {
+            acid: '#A6FF00',
+            venom: '#72D900',
+            void: '#050606',
+            ash: '#111413'
+          },
+          boxShadow: {
+            glow: '0 0 34px rgba(166,255,0,.36)',
+            hard: '0 28px 70px rgba(0,0,0,.55)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-void text-white font-body overflow-x-hidden">
+  <div class="noise"></div>
+  <div class="site-glow one"></div>
+  <div class="site-glow two"></div>
+
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/55 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="assets/spinix-logo.png" alt="Spinix Esports logo"
+          class="h-11 w-11 rounded-xl object-cover ring-1 ring-acid/50">
+        <div>
+          <p class="font-display text-lg font-black leading-none tracking-[.18em]">SPINIX</p>
+          <p class="text-[10px] font-bold uppercase tracking-[.36em] text-acid">Esports</p>
+        </div>
+      </a>
+      <button id="menuBtn" class="menu-btn lg:hidden">
+        <img src="assets/Hamburger_icon.svg.png" alt="menu">
+      </button>
+      <div id="navLinks"
+        class="hidden items-center gap-8 text-sm font-bold uppercase tracking-[.22em] text-white/70 lg:flex">
+        <a href="#team" class="hover:text-acid">Roster</a>
+        <a href="#identity" class="hover:text-acid">Identity</a>
+        <a href="#contact" class="hover:text-acid">Join</a>
+        <a href="#team" class="rounded-full bg-acid px-5 py-3 text-black shadow-glow hover:bg-white">Meet Team</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero relative min-h-screen overflow-hidden pt-28">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(166,255,0,.28),transparent_30%),linear-gradient(135deg,rgba(166,255,0,.13),transparent_28%)]">
+      </div>
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:py-24">
+        <div class="relative z-10">
+          <div
+            class="inline-flex items-center gap-3 rounded-full border border-acid/30 bg-acid/10 px-4 py-2 text-xs font-black uppercase tracking-[.28em] text-acid shadow-glow">
+            New Era Team
+          </div>
+          <h1
+            class="mt-7 font-display text-5xl font-black uppercase leading-[.88] tracking-tight sm:text-7xl lg:text-8xl">
+            Spinix<br><span class="stroke-text">Esports</span>
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-white/72">
+            A premium neon powered esports identity built around speed, pressure, teamwork, and fearless clutch plays.
+          </p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#team"
+              class="group rounded-full bg-acid px-8 py-4 text-center font-black uppercase tracking-[.22em] text-black shadow-glow transition hover:scale-[1.02] hover:bg-white">View
+              Roster</a>
+            <a href="#identity"
+              class="rounded-full border border-white/15 bg-white/5 px-8 py-4 text-center font-black uppercase tracking-[.22em] text-white hover:border-acid hover:text-acid">Team
+              DNA</a>
+          </div>
+        </div>
+
+        <div class="relative z-10 mx-auto w-full max-w-[520px]">
+          <div
+            class="logo-card relative aspect-square overflow-hidden rounded-[2.2rem] border border-acid/25 bg-black/50 p-8 shadow-hard">
+            <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(166,255,0,.22),transparent_55%)]"></div>
+            <img src="assets/spinix-logo.png" alt="Spinix Esports emblem"
+              class="relative z-10 h-full w-full object-contain drop-shadow-[0_0_34px_rgba(166,255,0,.55)]">
+          </div>
+          <div
+            class="stat-panel -mt-10 grid grid-cols-3 gap-3 rounded-[1.5rem] border border-white/10 bg-black/70 p-4 backdrop-blur-xl">
+            <div>
+              <p class="font-display text-3xl font-black text-acid">06</p>
+              <p class="text-xs uppercase tracking-widest text-white/55">Players</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl font-black text-acid">04</p>
+              <p class="text-xs uppercase tracking-widest text-white/55">Roles</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl font-black text-acid">01</p>
+              <p class="text-xs uppercase tracking-widest text-white/55">Squad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="relative py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mb-12 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[.35em] text-acid">Official Roster</p>
+            <h2 class="mt-3 font-display text-4xl font-black uppercase sm:text-6xl">The Lineup</h2>
+          </div>
+          <p class="max-w-xl text-white/60">Every player is placed with a clear role so the team can move fast, hold
+            pressure, and win structured fights.</p>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+          <a href="#" target="_blank" class="player-card player-photo-card">
+            <img src="assets/kakarot.png" alt="Kakarot">
+            <div class="player-overlay">
+              <span>01</span>
+              <h3>Kakarot</h3>
+              <p>First Rusher</p>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" class="player-card player-photo-card">
+            <img src="assets/zenix.png" alt="Zenix">
+            <div class="player-overlay">
+              <span>02</span>
+              <h3>Zenix</h3>
+              <p>Second Rusher</p>
+            </div>
+          </a>
+
+
+          <a href="#" target="_blank" class="player-card player-photo-card">
+            <img src="assets/storm.png" alt="storm">
+            <div class="player-overlay">
+              <span>03</span>
+              <h3>Storm</h3>
+              <p>IGL</p>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" class="player-card player-photo-card">
+            <img src="assets/ignite7.png" alt="Ignite7">
+            <div class="player-overlay">
+              <span>04</span>
+              <h3>Ignite7</h3>
+              <p>Bomber</p>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" class="player-card player-photo-card">
+            <img src="assets/nexxer.png" alt="Nexxer">
+            <div class="player-overlay">
+              <span>05</span>
+              <h3>Nexxer</h3>
+              <p>Supporter</p>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" class="player-card player-photo-card">
+            <img src="assets/nihon17.png" alt="Nihon17">
+            <div class="player-overlay">
+              <span>06</span>
+              <h3>Nihon17</h3>
+              <p>Supporter</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="identity" class="relative overflow-hidden py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div
+          class="identity-card grid gap-10 rounded-[2rem] border border-white/10 bg-white/[.035] p-7 shadow-hard backdrop-blur-xl lg:grid-cols-[.8fr_1.2fr] lg:p-12">
+          <div>
+            <p class="text-sm font-black uppercase tracking-[.35em] text-acid">Team Identity</p>
+            <h2 class="mt-4 font-display text-4xl font-black uppercase sm:text-5xl">Built to Strike Fast</h2>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div class="feature">
+              <h3>Pressure</h3>
+              <p>Fast entry plays with sharp timing.</p>
+            </div>
+            <div class="feature">
+              <h3>Control</h3>
+              <p>Smart support and strong team calls.</p>
+            </div>
+            <div class="feature">
+              <h3>Clutch</h3>
+              <p>Calm finishes in high pressure rounds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24">
+      <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
+        <p class="text-sm font-black uppercase tracking-[.35em] text-acid">Spinix Esports</p>
+        <h2 class="mt-4 font-display text-4xl font-black uppercase sm:text-6xl">Ready for the Next Match</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-white/65">Use this section for Discord, social media, tournament contact,
+          or recruitment information.</p>
+        <a href="https://www.facebook.com/profile.php?id=61588587945053" target="_blank"
+          class="mt-9 inline-flex rounded-full bg-acid px-9 py-4 font-black uppercase tracking-[.22em] text-black shadow-glow hover:bg-white">Contact
+          Team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 py-8 text-center text-xs font-bold uppercase tracking-[.25em] text-white/45">
+    © 2026 Spinix Esports. All Rights Reserved.
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
